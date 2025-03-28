@@ -1,4 +1,4 @@
-/* 🌟 Dashboard Layout */
+
 .dashboard-container {
   display: flex;
   height: 100vh;
@@ -6,7 +6,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* 🎨 Sidebar */
+
 .sidebar {
   width: 250px;
   background: #1e1e2f;
