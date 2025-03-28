@@ -1,0 +1,85 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 350px;
+  transition: transform 0.3 ease-in-out;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.glass-card :hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.inputContainer {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-size: 1rem;
+  color: white;
+  outline: none;
+  transition: 0.3s;
+}
+.inputContainer::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.inputContainer:focus {
+  border: 1px solid #ffffff;
+  background: rgba(255, 255, 255, 0.3);
+}
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #5a7ee5, #956fd2);
+  transform: scale(1.05);
+}
+.error-text {
+  color: #ff4d4d;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+@media (max-width: 400px) {
+  .glass-card {
+    width: 90%;
+    padding: 30px;
+  }
+}

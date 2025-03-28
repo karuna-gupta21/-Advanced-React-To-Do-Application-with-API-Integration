@@ -1,0 +1,114 @@
+/* 🌟 Dashboard Layout */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  background: #f4f7fc;
+  font-family: "Poppins", sans-serif;
+}
+
+/* 🎨 Sidebar */
+.sidebar {
+  width: 250px;
+  background: #1e1e2f;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 4px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h2 {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 1.1rem;
+  border-radius: 6px;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.dashHeading {
+  font-size: 2rem;
+}
+
+.logout-btn {
+  margin-top: auto;
+  padding: 10px 20px;
+  background: red;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background: darkred;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.widget-container,
+.weather-widget {
+  width: 80%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .widget-container,
+  .weather-widget {
+    width: 100%;
+  }
+}

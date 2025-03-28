@@ -1,0 +1,76 @@
+.task-list-container {
+  background: #1e3a5f;
+
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 15px;
+}
+
+.priority-section {
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 6px;
+  background: #294e75; /* Slightly lighter blue */
+}
+
+.priority-header {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+.priority-high {
+  background-color: #ff4d4d;
+}
+
+.priority-medium {
+  background-color: #f5a623;
+}
+
+.priority-low {
+  background-color: #2ecc71;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  margin: 5px 0;
+  border-radius: 6px;
+  background: #355b88;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: darkred;
+}
+
+.no-tasks {
+  color: #d1d1d1;
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 500px) {
+  .task-list-container {
+    width: 95%;
+  }
+}
