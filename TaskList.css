@@ -68,7 +68,7 @@
   padding: 10px;
 }
 
-/* 📱 Responsive Design */
+
 @media (max-width: 500px) {
   .task-list-container {
     width: 95%;
